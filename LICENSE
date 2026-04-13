@@ -1,21 +1,68 @@
-MIT License
+Base64 Converter - Dual License Agreement
 
-Copyright (c) 2026 Datta Dhebe
+Copyright (c) 2026 DattaDhebe (dattadhebe75@gmail.com)
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+TERMS AND CONDITIONS:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1. PERSONAL USE LICENSE
+   - You may use, copy, modify, and distribute this software for personal, 
+     non-commercial purposes.
+   - You MUST include clear attribution to DattaDhebe as the original author 
+     in all copies, modified versions, and documentation.
+   - Attribution format: "Original work by DattaDhebe (https://github.com/DattaDhebe/base64-convertor)"
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+2. COMMERCIAL USE LICENSE
+   - Any commercial use, including but not limited to:
+     * Selling or offering for sale (directly or as part of a product)
+     * Using in a commercial business or service
+     * Making profit from any software based on or derived from this work
+     * Offering this as SaaS or web service for a fee
+   
+   REQUIRES:
+   a) Written permission from DattaDhebe (dattadhebe75@gmail.com)
+   b) Clear attribution to the original author
+   c) Revenue sharing arrangement: Minimum 5% of gross profits generated from 
+      products/services that use or are based on this software
+   d) Quarterly reporting of usage and revenue details
+
+3. ATTRIBUTION REQUIREMENTS
+   - All public-facing applications must display: 
+     "Built with Base64 Converter by DattaDhebe"
+   - Source code must include copyright notice and link to original repository
+   - Modified versions must be clearly marked as modifications
+
+4. RESTRICTIONS
+   - You may NOT sublicense this software without explicit written permission
+   - You may NOT remove or obscure the copyright notice
+   - You may NOT claim original authorship of this software
+   - You may NOT use this software in any way that violates applicable laws
+
+5. COMMERCIAL LICENSE EXEMPTIONS
+   The following is ALLOWED WITHOUT COMMERCIAL LICENSE:
+   - Using this software internally for educational purposes
+   - Modifications for personal learning
+   - Academic research and non-profit organizations (with attribution)
+   - Open-source projects (with attribution, same license terms apply)
+
+6. DISCLAIMER
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+   ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM THE SOFTWARE.
+
+7. ENFORCEMENT
+   - Violations of this license may result in legal action
+   - DattaDhebe reserves the right to audit any commercial use
+   - A cease-and-desist notice may be issued for license violations
+
+8. CONTACT FOR COMMERCIAL LICENSE
+   Email: dattadhebe75@gmail.com
+   Subject: "Base64 Converter - Commercial License Request"
+   Include: Project description, usage details, and estimated revenue
+
+---
+
+For inquiries about bulk licensing, partnerships, or custom agreements, 
+please contact dattadhebe75@gmail.com
+
+Version 1.0 | Last Updated: April 2026
