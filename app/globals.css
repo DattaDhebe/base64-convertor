@@ -1,9 +1,27 @@
 @import "tailwindcss";
 
+:root {
+  --font-sans: var(--font-dm-sans), sans-serif;
+  --font-mono: var(--font-ibm-plex-mono), monospace;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  @apply bg-gray-50;
+  font-family: var(--font-sans);
+  background-color: #fffaf5;
+  color: #020617;
+}
+
+textarea,
+code,
+pre {
+  font-family: var(--font-mono);
+}
+
+::selection {
+  background: rgba(249, 115, 22, 0.22);
+  color: #431407;
 }
