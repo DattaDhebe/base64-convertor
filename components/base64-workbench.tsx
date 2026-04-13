@@ -7,6 +7,7 @@ import { CssToBase64Converter } from '@/components/converters/css-to-base64-conv
 import { FileToBase64Converter } from '@/components/converters/file-to-base64-converter';
 import { HexToBase64Converter } from '@/components/converters/hex-to-base64-converter';
 import { HtmlToBase64Converter } from '@/components/converters/html-to-base64-converter';
+import { ImageToBase64Converter } from '@/components/converters/image-to-base64-converter';
 import { converterOptions } from '@/lib/converters';
 
 const implementedConverters = {
@@ -15,6 +16,7 @@ const implementedConverters = {
   file: FileToBase64Converter,
   hex: HexToBase64Converter,
   html: HtmlToBase64Converter,
+  image: ImageToBase64Converter,
 } as const;
 
 export function Base64Workbench() {
