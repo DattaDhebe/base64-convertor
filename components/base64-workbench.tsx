@@ -8,6 +8,7 @@ import { FileToBase64Converter } from '@/components/converters/file-to-base64-co
 import { HexToBase64Converter } from '@/components/converters/hex-to-base64-converter';
 import { HtmlToBase64Converter } from '@/components/converters/html-to-base64-converter';
 import { ImageToBase64Converter } from '@/components/converters/image-to-base64-converter';
+import { PdfToBase64Converter } from '@/components/converters/pdf-to-base64-converter';
 import { converterOptions } from '@/lib/converters';
 
 const implementedConverters = {
@@ -17,6 +18,7 @@ const implementedConverters = {
   hex: HexToBase64Converter,
   html: HtmlToBase64Converter,
   image: ImageToBase64Converter,
+  pdf: PdfToBase64Converter,
 } as const;
 
 export function Base64Workbench() {
