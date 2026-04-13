@@ -19,6 +19,22 @@ export async function fileToDataUrl(file: File): Promise<string> {
   });
 }
 
+export function bytesToBase64(bytes: Uint8Array): string {
+  let binary = '';
+  const chunkSize = 0x8000;
+
+  for (let index = 0; index < bytes.length; index += chunkSize) {
+    const chunk = bytes.subarray(index, index + chunkSize);
+    binary += String.fromCharCode(...chunk);
+  }
+
+  return btoa(binary);
+}
+
+export function textToBase64(input: string): string {
+  return bytesToBase64(new TextEncoder().encode(input));
+}
+
 export function formatBytes(bytes: number): string {
   if (bytes === 0) {
     return '0 B';

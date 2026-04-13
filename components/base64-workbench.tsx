@@ -3,10 +3,12 @@
 import { useMemo, useState } from 'react';
 import { AudioToBase64Converter } from '@/components/converters/audio-to-base64-converter';
 import { ComingSoonConverter } from '@/components/converters/coming-soon-converter';
+import { CssToBase64Converter } from '@/components/converters/css-to-base64-converter';
 import { converterOptions } from '@/lib/converters';
 
 const implementedConverters = {
   audio: AudioToBase64Converter,
+  css: CssToBase64Converter,
 } as const;
 
 export function Base64Workbench() {
