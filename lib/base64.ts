@@ -35,6 +35,30 @@ export function textToBase64(input: string): string {
   return bytesToBase64(new TextEncoder().encode(input));
 }
 
+export function hexToBase64(input: string): string {
+  const normalized = input.replace(/^0x/i, '').replace(/\s+/g, '').toLowerCase();
+
+  if (!normalized) {
+    return '';
+  }
+
+  if (!/^[\da-f]+$/.test(normalized)) {
+    throw new Error('Hex input can only contain characters 0-9 and A-F.');
+  }
+
+  if (normalized.length % 2 !== 0) {
+    throw new Error('Hex input must contain an even number of characters.');
+  }
+
+  const bytes = new Uint8Array(normalized.length / 2);
+
+  for (let index = 0; index < normalized.length; index += 2) {
+    bytes[index / 2] = Number.parseInt(normalized.slice(index, index + 2), 16);
+  }
+
+  return bytesToBase64(bytes);
+}
+
 export function formatBytes(bytes: number): string {
   if (bytes === 0) {
     return '0 B';
