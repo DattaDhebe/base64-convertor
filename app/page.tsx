@@ -27,6 +27,19 @@ export default function Home() {
         },
       },
       {
+        '@type': 'Organization',
+        name: 'Base64 Studio',
+        url: 'https://dhebe.com',
+        email: 'support@dhebe.com',
+        contactPoint: {
+          '@type': 'ContactPoint',
+          contactType: 'customer support',
+          email: 'support@dhebe.com',
+          availableLanguage: ['English'],
+          url: 'https://dhebe.com/support',
+        },
+      },
+      {
         '@type': 'SoftwareApplication',
         name: 'Base64 Studio',
         applicationCategory: 'DeveloperApplication',
@@ -49,14 +62,15 @@ export default function Home() {
           'CSS to Base64',
           'File to Base64',
           'Audio to Base64',
-          'Base64 to ASCII',
-          'Base64 to Audio',
-          'Basic Auth Decode',
-          'Base64 to File',
-          'Base64 to Hex',
-          'Base64 to Image',
-          'Base64 to PDF',
           'Base64 to Text',
+          'Base64 to Image',
+          'Base64 to URL',
+          'Base64 to Hex',
+          'Base64 to PDF',
+          'Base64 to HTML',
+          'Base64 to CSS',
+          'Base64 to File',
+          'Base64 to Audio',
         ],
       },
       {
@@ -83,7 +97,7 @@ export default function Home() {
             name: 'Which Base64 tools are available?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'The site includes tools for Text, Image, URL, Hex, PDF, HTML, CSS, File, and Audio encoding, plus Base64 decoding for ASCII, Audio, Basic Auth, File, Hex, Image, PDF, and Text.',
+              text: 'The site includes tools for Text, Image, URL, Hex, PDF, HTML, CSS, File, and Audio encoding, plus matching Base64 decoding tools for Text, Image, URL, Hex, PDF, HTML, CSS, File, and Audio.',
             },
           },
         ],
@@ -122,6 +136,20 @@ export default function Home() {
               tools={toolPages.filter((tool) => tool.kind === 'decoder')}
               accentClass="text-cyan-600"
             />
+          </div>
+
+          <div className="mt-8 rounded-[1.5rem] border border-slate-200 bg-slate-50 px-5 py-5">
+            <h3 className="text-lg font-semibold text-slate-950">Need help or deployment guidance?</h3>
+            <p className="mt-2 text-sm leading-6 text-slate-600">
+              Visit the support page for privacy details, usage help, and Hostinger deployment guidance.
+            </p>
+            <Link
+              href="/support"
+              className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-cyan-700 transition hover:text-cyan-800"
+            >
+              Open support page
+              <span aria-hidden="true">→</span>
+            </Link>
           </div>
         </div>
       </section>

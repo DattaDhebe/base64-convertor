@@ -55,17 +55,38 @@ export default async function ToolPage({ params }: ToolPageProps) {
 
   const structuredData = {
     '@context': 'https://schema.org',
-    '@type': 'WebApplication',
-    name: `${tool.label} | Base64 Studio`,
-    applicationCategory: 'DeveloperApplication',
-    operatingSystem: 'Web',
-    url: `https://dhebe.com/tools/${tool.slug}`,
-    description: tool.description,
-    offers: {
-      '@type': 'Offer',
-      price: '0',
-      priceCurrency: 'USD',
-    },
+    '@graph': [
+      {
+        '@type': 'WebApplication',
+        name: `${tool.label} | Base64 Studio`,
+        applicationCategory: 'DeveloperApplication',
+        operatingSystem: 'Web',
+        url: `https://dhebe.com/tools/${tool.slug}`,
+        description: tool.description,
+        offers: {
+          '@type': 'Offer',
+          price: '0',
+          priceCurrency: 'USD',
+        },
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Home',
+            item: 'https://dhebe.com',
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: tool.label,
+            item: `https://dhebe.com/tools/${tool.slug}`,
+          },
+        ],
+      },
+    ],
   };
 
   return (

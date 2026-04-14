@@ -25,6 +25,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
+  authors: [{ name: 'Datta Dhebe', url: 'https://dhebe.com' }],
+  creator: 'Datta Dhebe',
+  publisher: 'Base64 Studio',
+  referrer: 'origin-when-cross-origin',
   category: 'technology',
   openGraph: {
     type: 'website',
